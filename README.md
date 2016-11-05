@@ -30,4 +30,4 @@ FileUtil.getCompressedPath(String originImagePath, String imageName, int maxPx);
 
 ![image](https://github.com/AndyFightting/SelectPhoto_Android/blob/master/tmp_image.png)
 
-Thakes to [PhotoView](https://github.com/chrisbanes/PhotoView)
+Thanks to [PhotoView](https://github.com/chrisbanes/PhotoView)
