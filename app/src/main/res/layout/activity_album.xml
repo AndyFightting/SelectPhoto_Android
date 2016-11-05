@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_gray"
+    android:clickable="true"
+    tools:context=".photo_lib.photo.AlbumPhotoSwitchActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/pre_tv"
+            android:onClick="previewTap"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="预览"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:onClick="sureTap"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black" />
+
+        <com.suguiming.selectphoto_android.photo_lib.customer.BorderTextView
+            android:id="@+id/num_tv"
+            android:layout_toLeftOf="@+id/sure_tv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:textSize="11dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:inner_color="@color/green"
+            app:corner_radius="10dp" />
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/photo_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/title_layout"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+</RelativeLayout>

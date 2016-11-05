@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.suguiming.selectphoto_android.photo_lib.customer.BorderTextView
+            android:id="@+id/camera_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="itemTap"
+            android:text="相机"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:bord_color="@color/gray"
+            app:bord_width="1dp"
+            app:inner_color="@color/white" />
+
+        <com.suguiming.selectphoto_android.photo_lib.customer.BorderTextView
+            android:id="@+id/phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="itemTap"
+            android:text="从相册中添加"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:bord_color="@color/gray"
+            app:bord_width="1dp"
+            app:inner_color="@color/white" />
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="itemTap"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

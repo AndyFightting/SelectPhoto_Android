@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  自定义属性 集合   -->
+    <attr name="corner_radius" format="dimension" />
+    <attr name="bord_width" format="dimension" />
+    <attr name="bord_color" format="color"/>
+    <attr name="inner_color" format="color"/>
+    <attr name="image_type">
+        <enum name="circle_image" value="0" />
+        <enum name="corner_image" value="1" />
+    </attr>
+
+    <!--  RoundImageView   -->
+    <declare-styleable name="RoundImageView">
+        <attr name="bord_width" />
+        <attr name="bord_color"/>
+        <attr name="corner_radius" />
+        <attr name="image_type" />
+    </declare-styleable>
+
+    <!--  BorderTextView   -->
+    <declare-styleable name="BorderTextView">
+        <attr name="bord_width" />
+        <attr name="corner_radius" />
+        <attr name="inner_color"/>
+        <attr name="bord_color"/>
+    </declare-styleable>
+
+</resources>

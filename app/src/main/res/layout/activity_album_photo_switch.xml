@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_album_photo_switch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    tools:context=".photo_lib.photo.AlbumPhotoSwitchActivity">
+
+    <com.suguiming.selectphoto_android.photo_lib.customer.PhotoViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="@color/crown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_height">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:clickable="true"
+                android:onClick="backImageTap"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back_img"
+                android:layout_width="50dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/title_tv"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"/>
+
+            <ImageView
+                android:id="@+id/selected_img"
+                android:clickable="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_no"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.suguiming.selectphoto_android.photo_lib.customer.BorderTextView
+        android:id="@+id/sure_tv"
+        android:clickable="true"
+        app:inner_color="@color/green"
+        app:corner_radius="4dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="确定"
+        android:textSize="12dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>
